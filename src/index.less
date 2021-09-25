@@ -1,0 +1,65 @@
+@import '../node_modules/antd/es/style/themes/default.less';
+@prefix: ~'antd-area-cascader';
+
+.@{prefix} {
+  text-align: left;
+  &-allCheck {
+    text-align: left;
+    padding: 20px 12px 10px;
+  }
+  &-main {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 750px;
+  
+  }
+
+  &-column {
+    display: inline-flex;
+    flex: 1 0 auto;
+    width: 220px;
+    min-width: 164px;
+    height: 484px;
+    overflow: hidden auto;
+
+    &:not(:first-child) {
+      border-left: 1px solid #f0f0f0;
+    }
+
+    & > ul {
+      position: relative;
+      width: 100%;
+      padding: 8px 0;
+      overflow-y: auto;
+    }
+
+    &-item {
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+      padding: 5px 12px;
+      background: white;
+      cursor: pointer;
+      transition: 0.3s;
+
+
+      &-icon {
+        margin-top: 6px;
+        color: rgba(0, 0, 0, 0.45);
+        font-size: 10px;
+      }
+
+      &-label {
+        flex: 1;
+        margin-bottom: 0;
+        padding: 0 8px;
+        line-height: 22px;
+
+        & > span {
+          max-width: 100%;
+          word-break: break-all;
+        }
+      }
+    }
+  }
+}
